@@ -10,14 +10,14 @@ void PaintWidget::setIsShiftPressed(bool value)
 
 //-------------------------------------------SET TOOLS AND PROPERTIES---------------------------------------------
 
-void PaintWidget::setType_fill(const TypeFill &value)
+void PaintWidget::setTypeFill(const TypeFill &value)
 {
-    type_fill = value;
-    if(type_fill == TypeFill::NoFill) {
+    typeFill = value;
+    if(typeFill == TypeFill::NoFill) {
         pen.setStyle(Qt::PenStyle::SolidLine);
         brush.setStyle(Qt::BrushStyle::NoBrush);
     }
-    if(type_fill == TypeFill::Full) {
+    if(typeFill == TypeFill::Full) {
         brush.setColor(fillColor);
         brush.setStyle(Qt::BrushStyle::SolidPattern);
 
@@ -25,7 +25,7 @@ void PaintWidget::setType_fill(const TypeFill &value)
             pen.setStyle(Qt::PenStyle::NoPen);
         }
     }
-    if(type_fill == TypeFill::WithBorder) {
+    if(typeFill == TypeFill::WithBorder) {
         pen.setStyle(Qt::PenStyle::SolidLine);
         brush.setColor(fillColor);
         brush.setStyle(Qt::BrushStyle::SolidPattern);
@@ -74,7 +74,7 @@ void PaintWidget::setCurrentPaintTool(Tool tool)
     }
     if(currentTool == Tool::Rect || currentTool == Tool::Circle || currentTool == Tool::Triangle) {
         pen.setCapStyle(Qt::PenCapStyle::SquareCap);
-        if(type_fill == TypeFill::Full)
+        if(typeFill == TypeFill::Full)
             pen.setStyle(Qt::PenStyle::NoPen);
     }
 }

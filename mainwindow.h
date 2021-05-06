@@ -14,10 +14,10 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-    QActionGroup *toolbarActionsGroup;
-    QActionGroup *fillbarActionsGroup;
-    QLabel *labelPenWidth;
-    QSlider *sliderPenWidth;
+    QActionGroup *toolbarActionsGroup = nullptr;
+    QActionGroup *fillbarActionsGroup = nullptr;
+    QLabel *labelPenWidth = nullptr;
+    QSlider *sliderPenWidth = nullptr;
 
 public:
     MainWindow(QWidget *parent = nullptr);

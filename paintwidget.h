@@ -33,7 +33,7 @@ class PaintWidget : public QWidget
     unsigned int lineWidth = 1;
 
     Tool currentTool;
-    TypeFill type_fill;
+    TypeFill typeFill;
 
     bool isMouseButtonPressed = false;
     bool isFill = false;
@@ -52,7 +52,7 @@ public:
     void setFillColor(const QColor& color);
     void setCurrentPaintTool(Tool tool);
     void setIsShiftPressed(bool value);
-    void setType_fill(const TypeFill &value);
+    void setTypeFill(const TypeFill &value);
     void setLine_width(unsigned int value);
     bool isSceneEmpty();
 
