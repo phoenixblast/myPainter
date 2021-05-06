@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/file_menu">
+        <file>resources/undo.png</file>
+        <file>resources/save_file.png</file>
+        <file>resources/redo.png</file>
+        <file>resources/new_file.png</file>
+        <file>resources/open_file.png</file>
+    </qresource>
+    <qresource prefix="/toolbar">
+        <file>resources/brush.png</file>
+        <file>resources/circle.png</file>
+        <file>resources/line.png</file>
+        <file>resources/pen.png</file>
+        <file>resources/rectangle.png</file>
+        <file>resources/triangle.png</file>
+    </qresource>
+    <qresource prefix="/tool_properties">
+        <file>resources/color_area_fill.png</file>
+        <file>resources/color_palette.png</file>
+        <file>resources/line_width.png</file>
+        <file>resources/gradient.png</file>
+        <file>resources/fill_switch.png</file>
+        <file>resources/fill_with_border.png</file>
+        <file>resources/full_fill.png</file>
+        <file>resources/no_fill.png</file>
+    </qresource>
+</RCC>
